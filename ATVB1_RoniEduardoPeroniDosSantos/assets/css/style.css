@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    padding: 20px 20px 0 20px; /*top, right, bottom, left*/
+}
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*se aplica na horizontal*/
+    align-items: center;
+}
+header .brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+header .brand img {
+    width: 80px;
+}
+header .brand h6 {
+    font-size: 24px;
+    color: #1E90FF;
+    font-weight: 400;
+    line-height: 30px;
+}
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 16px;
+}
+
+header ul li {
+    font-weight: 300;
+    line-height: 30px;
+}
+header li a {
+    text-decoration: none;
+    color:#000;
+    padding-bottom: 16px; /*bottom é parte de baixo*/
+}
+header li a:hover, 
+header li a.active {
+    color: #1E90FF; /*cor dos botões*/
+}
+header li a.active {
+    font-weight: 400;
+    border-bottom: 2px solid #1E90FF;
+}
+header li button {
+    background-color: #1E90FF;
+    color: #fff;
+    border: none;
+    text-transform: uppercase; /*deixa o texto em maiusculo*/
+    font-weight: 300;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 4px; /*borda arredondada*/
+    margin-left: 16px;
+    line-height: 20px;
+}
+main{
+    margin: 32px 0;
+}
+main h2{
+    font-weight: 300;
+    margin: 32px;
+    font-size: 36px;
+    line-height: 56px;
+    text-align: center;
+    color: #1E90FF;
+}
+main #banner{
+    height: 550px;
+    border: 1px solid #dcdceb;
+    border-radius: 10px;
+    color: #1E90FF;
+    background-image: url('..//img/background-house.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+#banner h1{
+    margin: 60px 0 0 45px;
+    font-weight: 300;
+    font-size: 62px;
+}
+#banner h3{
+    margin-top: 16px;
+    margin-left: 45px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+    margin-bottom: 32px;
+}
+#cards {
+    margin: 32px 0;
+}
+#cards .cards-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+#cards .card1{
+    width: 530px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 48px;
+    position: relative;
+}
+#cards .card1 img{
+    width: 160px;
+    height: 180px;
+}
+#card .card1 h4{
+    font-weight: 400;
+    margin-bottom: 12px;
+    text-align: justify;
+}
+#cards .card1 p{
+    font-weight: 300;
+    margin-bottom: 12px;
+    text-align: justify;
+    color: #8f90a6;
+    max-height: 72px;
+    overflow: hidden;
+}
+#cards .card1 .card-price{
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    right: 20px;
+    bottom: 20px;
+}
+#cards .card-price p{
+    background-color: #0889d4;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
