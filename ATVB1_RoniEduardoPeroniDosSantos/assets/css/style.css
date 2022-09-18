@@ -7,7 +7,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 header {
-    padding: 20px 20px 0 20px; /*top, right, bottom, left*/
+    padding: 20px 20px 20px 20px; /*top, right, bottom, left*/
+    background-color: #1E90FF;
 }
 header .container {
     display: flex;
@@ -16,18 +17,19 @@ header .container {
     /*se aplica na horizontal*/
     align-items: center;
 }
-header .brand {
+header .logo {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 16px;
 }
-header .brand img {
-    width: 80px;
+header .logo img {
+    width: 100px;
+    align-items: center;
 }
-header .brand h6 {
+header .logo h6 {
     font-size: 24px;
-    color: #1E90FF;
+    color: #fff;
     font-weight: 400;
     line-height: 30px;
 }
@@ -48,24 +50,12 @@ header li a {
     padding-bottom: 16px; /*bottom é parte de baixo*/
 }
 header li a:hover, 
-header li a.active {
-    color: #1E90FF; /*cor dos botões*/
+header li a.botoes {
+    color: #fff; /*cor dos botões*/
 }
-header li a.active {
+header li a.botoes {
     font-weight: 400;
-    border-bottom: 2px solid #1E90FF;
-}
-header li button {
-    background-color: #1E90FF;
-    color: #fff;
-    border: none;
-    text-transform: uppercase; /*deixa o texto em maiusculo*/
-    font-weight: 300;
-    font-size: 14px;
-    padding: 8px 20px;
-    border-radius: 4px; /*borda arredondada*/
-    margin-left: 16px;
-    line-height: 20px;
+    border-bottom: 2px solid #fff;
 }
 main{
     margin: 32px 0;
@@ -78,19 +68,21 @@ main h2{
     text-align: center;
     color: #1E90FF;
 }
-main #banner{
+#banner{
     height: 550px;
+    width: 80%;
+    margin: 0 0 0 135px;
     border: 1px solid #dcdceb;
     border-radius: 10px;
-    color: #1E90FF;
-    background-image: url('..//img/background-house.png');
+    color: #fff;
+    background-image: url('..//img/rainha_elizabeth.jpg');
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: center;
 }
 #banner h1{
-    margin: 60px 0 0 45px;
+    margin: 45px 0 0 45px;
     font-weight: 300;
-    font-size: 62px;
+    font-size: 52px;
 }
 #banner h3{
     margin-top: 16px;
@@ -100,37 +92,34 @@ main #banner{
     line-height: 36px;
     margin-bottom: 32px;
 }
-#cards {
-    margin: 32px 0;
-}
-#cards .cards-content{
+#conteudo .noticias{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
-#cards .card1{
+#conteudo .noticias-img{
     width: 530px;
     display: flex;
     flex-direction: row;
     gap: 16px;
-    box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 48px;
     position: relative;
+
 }
-#cards .card1 img{
+#conteudo .noticias-img img{
     width: 160px;
     height: 180px;
 }
-#card .card1 h4{
+#card .noticias-img h4{
     font-weight: 400;
     margin-bottom: 12px;
     text-align: justify;
 }
-#cards .card1 p{
+#conteudo .noticias-img p{
     font-weight: 300;
     margin-bottom: 12px;
     text-align: justify;
@@ -138,17 +127,95 @@ main #banner{
     max-height: 72px;
     overflow: hidden;
 }
-#cards .card1 .card-price{
+#conteudo .noticias-img .botao-ver{
     position: absolute;
     display: flex;
     justify-content: end;
     right: 20px;
     bottom: 20px;
 }
-#cards .card-price p{
-    background-color: #0889d4;
+#conteudo .botao-ver p{
+    background-color: #1E90FF;
     color: #fff;
     font-size: 14px;
     border-radius: 4px;
     padding: 8px 16px;
+}
+footer{
+    background-color: #1E90FF;
+    color: #fff;
+    margin-top: 48px;
+    padding: 48px 0;
+}
+footer .container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+footer .footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .footer-company{
+    width: 500px;
+    margin: 0 0 0 40px;
+}
+footer .footer-company .footer-logo{
+    font-size: 24px;
+    font-weight: 300;
+    padding-left: 50px;
+    background-image: url('../img/LOGO_SUDOESTE_NOTÍCIAS.png');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: 60px;
+    margin-bottom: 24px;
+}
+footer .footer-company p{
+    font-weight: 300;
+    font-size: 12px;
+}
+footer .menu{
+    font-weight: 300;
+    font-size: 14px;
+}
+footer .menu-title{
+    font-weight: 300;
+    font-size: 16px;
+}
+footer .menu ul{
+    list-style-type: none;
+    margin-top: 16px;
+}
+footer .menu li{
+    margin-top: 8px;
+}
+footer .menu a{
+    color: #fff;
+    text-decoration: none;
+}
+footer .menu a:hover{
+    text-decoration: underline;
+}
+footer .redes-sociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 24px;
+}
+footer .redes-sociais span{
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 16px;
+}
+footer .redes-sociais .facebook{
+    background-image: url('../img/icon-facebook.svg');
+}
+footer .redes-sociais .instagram{
+    background-image: url('../img/icon-instagram.svg');
+}
+footer .copyright{
+    text-align: center;
+    font-weight: 300;
+    font-size: 10px;
 }
