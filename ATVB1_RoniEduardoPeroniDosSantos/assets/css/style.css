@@ -84,7 +84,7 @@ main h1{
 #banner img{
     height: 500px;
     width: 75%;
-    margin: 30px 0 52px 135px;
+    margin: 30px auto 16px 135px;
     border: 1px solid #dcdceb;
     border-radius: 5px;
     color: #fff;
@@ -157,7 +157,7 @@ main h1{
 }
 #noticias-mais .conteudo-img{
     width: 150px;
-    height: 300px;
+    height: 310px;
 }
 #noticias-mais .conteudo-img img{
     width: 150px;
@@ -211,13 +211,17 @@ footer li img{
 .rodape .text-right{
     text-align: center;
     display: grid;
+    margin-right: 20px;
 }
 .rodape .text-left{
     text-align: center;
     display: grid;
+    margin-left: 20px;
 }
 .rodape a.numero{
+    font-weight: 400;
     text-decoration: none;
+    color: #fff;
 }
 footer .redes-sociais{
     display: flex;
