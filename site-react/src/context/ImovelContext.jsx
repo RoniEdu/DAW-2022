@@ -1,6 +1,7 @@
-import { createContext } from "react";
+import { useEffect } from "react";
+import { createContext, useState } from "react";
 
-const data = [
+const dados = [
     {
         foto: './assets/img/thumb1.png',
         titulo: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
@@ -77,10 +78,39 @@ export const ImovelContext = createContext();
 
 export function ImovelContextProvider(props) {
 
-    const [imoveis, setImoveis] = useState(data);
+    useEffect(() => {
+
+        let dadosFiltrados = dados;
+
+        //Operação
+        if(paramFilter.operacao){
+            dadosFiltrados = dadosFiltrados.filter(item => item.operacao === paramFilter.operacao)
+        }
+
+        //Tipo
+        if(paramFilter.tipo){
+            dadosFiltrados = dadosFiltrados.filter(item => item.operacao === paramFilter.operacao)
+        }
+
+        //Cidade
+        if(paramFilter.cidade){
+            dadosFiltrados = dadosFiltrados.filter(item => item.operacao === paramFilter.operacao)
+        }
+
+        //Bairro
+        if(paramFilter.bairro){
+            dadosFiltrados = dadosFiltrados.filter(item => item.operacao === paramFilter.operacao)
+        }
+
+        setImoveis(dadosFiltrados)
+
+    }, [ paramFilter ]);
+
+    //const [imoveis, setImoveis] = useState(dados);
+    //const[paramFilter, setParamFilter] = useState({});
 
     return (
-        <ImovelContext.Provider value={{ imoveis }}>
+        <ImovelContext.Provider value={{ imoveis, setParamFilter }}>
             {props.children}
         </ImovelContext.Provider>
     )

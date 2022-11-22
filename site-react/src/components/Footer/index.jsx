@@ -3,15 +3,15 @@ import './style.css'
 export function Footer() {
     return (
         <footer>
-            <div class="container">
-                <div class="footer-content">
-                    <div class="footer-company">
-                        <p class="footer-logo">Imobiliária UNIMATER</p>
+            <div className="container">
+                <div className="footer-content">
+                    <div className="footer-company">
+                        <p className="footer-logo">Imobiliária UNIMATER</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minus consequuntur nam saepe. Quidem laborum iste dolores libero dignissimos. Tempore vero molestias aliquid voluptatibus dolor tempora, fugit ad doloremque autem.</p>
                     </div>
 
-                    <div class="footer-menu">
-                        <p class="footer-menu-title">Nossa Empresa</p>
+                    <div className="footer-menu">
+                        <p className="footer-menu-title">Nossa Empresa</p>
                         <ul>
                             <li><a href="#">Sobre nós</a></li>
                             <li><a href="#">Especialistas</a></li>
@@ -20,8 +20,8 @@ export function Footer() {
                         </ul>
                     </div>
 
-                    <div class="footer-menu">
-                        <p class="footer-menu-title">Contato</p>
+                    <div className="footer-menu">
+                        <p className="footer-menu-title">Contato</p>
                         <ul>
                             <li>+55 (46) 9 9999-9999</li>
                             <li>Rua Mato Grosso, 200</li>
@@ -29,8 +29,8 @@ export function Footer() {
                         </ul>
                     </div>
 
-                    <div class="footer-menu">
-                        <p class="footer-menu-title">Parceiross</p>
+                    <div className="footer-menu">
+                        <p className="footer-menu-title">Parceiross</p>
                         <ul>
                             <li><a href="#">Empresa XPTO</a></li>
                             <li><a href="#">Empresa do Zeca</a></li>
@@ -40,14 +40,14 @@ export function Footer() {
                     </div>
                 </div>
 
-                <div class="footer-social">
-                    <span class="facebook"></span>
-                    <span class="twitter"></span>
-                    <span class="instagram"></span>
-                    <span class="linkedin"></span>
+                <div className="footer-social">
+                    <span className="facebook"></span>
+                    <span className="twitter"></span>
+                    <span className="instagram"></span>
+                    <span className="linkedin"></span>
                 </div>
 
-                <p class="footer-copyright">
+                <p className="footer-copyright">
                     &#169; 2022 - Todos os direitos reservados
                 </p>
             </div>

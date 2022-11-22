@@ -33,10 +33,12 @@ const bairro = [
 ]
 export function SectionBanner() {
 
-    const {imoveis} = useImovel();
+    const {imoveis, setParamFilter} = useImovel();
+
+    const[filter, setFilter] = useState();
 
     function handleFilter() {
-
+        setParamFilter
     }
 
     return (
@@ -47,27 +49,27 @@ export function SectionBanner() {
             </div>
             <div className="banner-filter">
                 <div className="filter-fields">
-
+                    {JSON.stringify(filter)}
                     <form>
-                        <select>
+                        <select onChange={event => setFilter({...filter, operacao: event.target.value})}>
                             {operacoes.map((item, index) => (
                                 <option key={index} value={item.valor}>{item.rotulo}</option>
                             ))}
                         </select>
 
-                        <select>
+                        <select onChange={event => setFilter({...filter, tipo: event.target.value})}>
                             {tipos.map((item, index) => (
                                 <option key={index} value={item.valor}>{item.rotulo}</option>
                             ))}
                         </select>
 
-                        <select>
+                        <select onChange={event => setFilter({...filter, cidade: event.target.value})}>
                             {cidade.map((item, index) => (
                                 <option key={index} value={item.valor}>{item.rotulo}</option>
                             ))}
                         </select>
 
-                        <select>
+                        <select onChange={event => setFilter({...filter, bairro: event.target.value})}>
                             {bairro.map((item, index) => (
                                 <option key={index} value={item.valor}>{item.rotulo}</option>
                             ))}
@@ -78,7 +80,7 @@ export function SectionBanner() {
 
                 <div className="filter-result">
                     <p className="result-value">{imoveis.lenght}</p>
-                    <p className="result-label">Imóveis</p>
+                    <p className="result-label">{imoveis.lenght != 1 ? 'imóveis' : 'imovel'}</p>
                     <button onClick={handleFilter}>Filtrar</button>
                 </div>
             </div>
