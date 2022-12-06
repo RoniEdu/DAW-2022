@@ -1,0 +1,29 @@
+#banner{
+    margin: 32px 0;
+}
+
+#banner h1{
+    margin: 46px 0 0 135px;
+    font-weight: 300;
+    font-size: 36px;
+    color: #1E90FF;
+    padding-left: 10px;
+    border-left: 3px solid #000;
+}
+#banner img{
+    height: 500px;
+    width: 75%;
+    margin: 30px auto 16px 135px;
+    border: 1px solid #dcdceb;
+    border-radius: 5px;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#banner h3{
+    margin: 1px 0 0 135px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 2px;
+    margin-bottom: 52px;
+}

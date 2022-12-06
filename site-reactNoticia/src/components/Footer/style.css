@@ -1,0 +1,65 @@
+footer{
+    background-color: #1E90FF;
+    color: #fff;
+    margin-top: 48px;
+    padding: 48px 0;
+    font-size: 20px;
+    font-weight: 700px;
+}
+footer .rodape1{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.rodape .descricao-rodape{
+    text-transform: uppercase;
+    justify-content: center;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+}
+footer li h3{
+    font-size: 22px;
+    margin-top: auto;
+}
+footer li img{
+    width: 150px;
+    margin-top: 16px;
+}
+.rodape .text-right{
+    text-align: center;
+    display: grid;
+    margin-right: 20px;
+}
+.rodape .text-left{
+    text-align: center;
+    display: grid;
+    margin-left: 20px;
+}
+.rodape a.numero{
+    font-weight: 400;
+    text-decoration: none;
+    color: #fff;
+}
+footer .redes-sociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 24px;
+}
+footer .redes-sociais span{
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 16px;
+}
+footer .redes-sociais .facebook{
+    background-image: url('../../assets/img/icon-facebook.svg');
+}
+footer .redes-sociais .instagram{
+    background-image: url('../../assets/img/icon-instagram.svg');
+}
+footer .copyright{
+    text-align: center;
+    font-weight: 300;
+    font-size: 12px;
+}
